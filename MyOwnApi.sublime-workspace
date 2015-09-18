@@ -1,0 +1,350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"poll",
+				"poll_options"
+			],
+			[
+				"pol",
+				"poll_id"
+			],
+			[
+				"op",
+				"optionToAdd"
+			],
+			[
+				"po",
+				"pollToDelete"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"p",
+				"pollOption"
+			],
+			[
+				"to",
+				"toDelete"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"h",
+				"headers"
+			],
+			[
+				"Poll",
+				"PollDataSeeder"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"succes",
+				"successful"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"new",
+				"newtable"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"t",
+				"type	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/courses/myOwnApi",
+		"/C/wamp/www/courses/myOwnApi/public"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/courses/myOwnApi/public/index.html",
+		"/C/Users/matthiku/Dropbox/courses/myOwnApi/public/index.html",
+		"/C/Users/matthiku/AppData/Roaming/Sublime Text 3/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/wamp/www/courses/pollApp/public/app/js/view/list.html",
+		"/C/wamp/www/courses/pollApp/public/app/js/controller/PollController.js",
+		"/C/wamp/www/courses/pollApp/public/app/js/view/admin.html",
+		"/C/wamp/www/courses/pollApp/app/Http/Controllers/PollOptionsController.php",
+		"/C/wamp/www/courses/pollApp/app/Http/Controllers/PollsController.php",
+		"/C/wamp/www/courses/pollApp/storage/logs/laravel.log",
+		"/C/wamp/www/courses/pollApp/app/Poll.php",
+		"/C/wamp/www/courses/pollApp/public/app/js/service/pollService.js",
+		"/C/wamp/www/courses/pollApp/public/app/js/service/pollService,js",
+		"/C/wamp/www/courses/pollApp/public/app/js/app.js",
+		"/C/wamp/www/courses/pollApp/public/app/index.html",
+		"/C/wamp/www/courses/pollApp/public/app/js/controller/PoolController.js",
+		"/C/wamp/www/courses/pollApp/database/seeds/PollTableSeeder.php",
+		"/C/wamp/www/courses/pollApp/database/seeds/DatabaseSeeder.php",
+		"/C/wamp/www/courses/pollApp/app/Http/routes.php",
+		"/C/wamp/www/courses/pollApp/app/PollOptions.php",
+		"/C/wamp/www/courses/pollApp/database/migrations/2015_09_17_112147_create_polls_table.php",
+		"/C/wamp/www/courses/pollApp/database/migrations/2015_09_17_112338_create_pollOptions_table.php",
+		"/C/wamp/www/courses/pollApp/.env",
+		"/C/wamp/www/courses/pollApp/config/database.php",
+		"/C/wamp/www/courses/todoApp/database/migrations/2015_09_17_110725_create_todo_table.php",
+		"/C/wamp/www/courses/todoApp/database/migrations/2015_09_17_103525_create_todo_table.php",
+		"/C/wamp/www/courses/todoApp/config/app.php",
+		"/C/wamp/www/courses/todoApp/config/database.php",
+		"/C/wamp/www/courses/todoApp/.env",
+		"/C/wamp/www/courses/blog50/app/database/migrations/2015_09_17_041807_create_posts_table.php",
+		"/C/wamp/www/courses/blog50/app/config/database.php",
+		"/C/Users/matthiku/Dropbox/courses/library/app/Http/Controllers/Auth/AuthController.php",
+		"/C/Users/matthiku/Dropbox/courses/library/app/Http/routes.php",
+		"/C/Users/matthiku/Dropbox/courses/library/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/Users/matthiku/Dropbox/courses/library/app/Http/Middleware/Authenticate.php",
+		"/C/Users/matthiku/Dropbox/courses/library/resources/views/home.blade.php",
+		"/C/Users/matthiku/Dropbox/courses/library/resources/views/layout/main.blade.php",
+		"/C/Users/matthiku/Dropbox/courses/library/app/Http/Controllers/UserController.php",
+		"/C/Users/matthiku/Dropbox/courses/library/resources/views/auth/login.blade.php",
+		"/C/Users/matthiku/Dropbox/courses/library/resources/views/auth/register.blade.php",
+		"/C/Users/matthiku/Dropbox/courses/library/config/app.php",
+		"/C/Users/matthiku/Dropbox/courses/library/storage/framework/views/7bb3ad605cfc00f01b398fb80fe051c0",
+		"/C/Users/matthiku/Dropbox/courses/library/resources/views/layout/master.blade.php",
+		"/C/Users/matthiku/Dropbox/courses/library/composer.json",
+		"/C/Users/matthiku/Dropbox/courses/library/app/Book.php",
+		"/C/Users/matthiku/Dropbox/courses/library/app/User.php",
+		"/C/Users/matthiku/Dropbox/courses/library/database/seeds/BookTableSeeder.php",
+		"/C/Users/matthiku/Dropbox/courses/library/database/seeds/DatabaseSeeder.php",
+		"/C/Users/matthiku/Dropbox/courses/library/.env",
+		"/C/Users/matthiku/Dropbox/courses/library/config/database.php",
+		"/C/Users/matthiku/Dropbox/courses/library/database/seeds/UserTableSeeder.php",
+		"/C/Users/matthiku/Dropbox/courses/library/database/migrations/2015_09_15_145719_create_books_table.php",
+		"/C/Users/matthiku/Dropbox/courses/library/database/migrations/2015_09_15_144932_create_users_table.php",
+		"/C/Users/matthiku/Dropbox/courses/laravelIntro/app/Http/routes.php",
+		"/C/Users/matthiku/Dropbox/courses/laravelIntro/resources/views/welcome.blade.php",
+		"/C/Users/matthiku/Dropbox/courses/laravelIntro/app/Book.php",
+		"/C/Users/matthiku/Dropbox/courses/laravelIntro/app/books.php",
+		"/C/Users/matthiku/Dropbox/courses/laravelIntro/database/migrations/2015_09_15_112616_create_books.php",
+		"/C/Users/matthiku/Dropbox/courses/laravelIntro/config/database.php",
+		"/C/Users/matthiku/Dropbox/courses/ecommerce/index.html",
+		"/C/Users/matthiku/Dropbox/courses/ecommerce/css/style.css",
+		"/C/Users/matthiku/Dropbox/courses/ecommerce/less/bootstrap.less",
+		"/C/Users/matthiku/Dropbox/courses/ecommerce/less/style.less",
+		"/C/Users/matthiku/Dropbox/courses/edx_hosting/css/style.css",
+		"/C/Users/matthiku/Dropbox/courses/edx_hosting/contact.html",
+		"/C/Users/matthiku/Dropbox/courses/edx_hosting/index.html",
+		"/C/Users/matthiku/Dropbox/courses/edx_hosting/domains.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"polloptions",
+			"poll_option",
+			"polloption",
+			"ool",
+			"pool",
+			"ool",
+			"}}",
+			"{{",
+			"!",
+			"        ",
+			"container"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"poll_options",
+			"polloption",
+			"poll_option",
+			"oll",
+			"Count: {{ count($books) }}",
+			"!!}",
+			"{!!"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "MyOwnApi.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
