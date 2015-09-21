@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"th",
+				"$this〔variable〕"
+			],
+			[
+				"pub",
+				"public_path〔function〕"
+			],
+			[
 				"poll",
 				"poll_options"
 			],
@@ -109,14 +117,14 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: List Packages"
 			],
 			[
 				"Package Control: in",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 528.0
 	},
 	"console":
 	{
@@ -138,10 +146,23 @@
 	"expanded_folders":
 	[
 		"/C/wamp/www/courses/myOwnApi",
-		"/C/wamp/www/courses/myOwnApi/public"
+		"/C/wamp/www/courses/myOwnApi/app",
+		"/C/wamp/www/courses/myOwnApi/database",
+		"/C/wamp/www/courses/myOwnApi/database/migrations",
+		"/C/wamp/www/courses/myOwnApi/resources/views"
 	],
 	"file_history":
 	[
+		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
+		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141159_vehicles_table.php",
+		"/C/wamp/www/courses/myOwnApi/.env",
+		"/C/wamp/www/courses/myOwnApi/app/MyModel.php",
+		"/C/wamp/www/courses/myOwnApi/app/Vehicle.php",
+		"/C/wamp/www/courses/myOwnApi/app/Maker.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MyController.php",
+		"/C/wamp/www/courses/myOwnApi/resources/views/hi.blade.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/routes.php",
 		"/C/wamp/www/courses/myOwnApi/public/index.html",
 		"/C/Users/matthiku/Dropbox/courses/myOwnApi/public/index.html",
 		"/C/Users/matthiku/AppData/Roaming/Sublime Text 3/Packages/Alignment/Default (Windows).sublime-keymap",
@@ -211,7 +232,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -225,6 +246,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"belongs",
 			"polloptions",
 			"poll_option",
 			"polloption",
@@ -313,6 +335,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"eloquent",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			],
+			[
+				"model",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			]
 		],
 		"width": 0.0
 	},

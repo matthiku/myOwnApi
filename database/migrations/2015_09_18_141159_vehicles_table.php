@@ -12,7 +12,8 @@ class VehiclesTable extends Migration
      */
     public function up()
     {
-        Schema::create('vehicles', function (Blueprint $table) {
+        Schema::create('vehicles', function (Blueprint $table) 
+        {
             $table->increments('serie');
             $table->string('color');
             $table->integer('power');
