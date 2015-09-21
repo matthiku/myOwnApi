@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"A",
+				"App〔namespace〕"
+			],
+			[
+				"re",
+				"$request〔variable〕"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"ve",
+				"$vehicle〔variable〕"
+			],
+			[
+				"mak",
+				"maker_id"
+			],
+			[
+				"fa",
+				"$faker〔variable〕"
+			],
+			[
+				"res",
+				"response〔function〕"
+			],
+			[
+				"num",
+				"numberBetween〔function〕"
+			],
+			[
+				"ran",
+				"randomNumber〔function〕"
+			],
+			[
+				"Fa",
+				"Faker"
+			],
+			[
 				"th",
 				"$this〔variable〕"
 			],
@@ -42,10 +82,6 @@
 			[
 				"na",
 				"name"
-			],
-			[
-				"req",
-				"request"
 			],
 			[
 				"h",
@@ -146,23 +182,32 @@
 	"expanded_folders":
 	[
 		"/C/wamp/www/courses/myOwnApi",
-		"/C/wamp/www/courses/myOwnApi/app",
-		"/C/wamp/www/courses/myOwnApi/database",
-		"/C/wamp/www/courses/myOwnApi/database/migrations",
-		"/C/wamp/www/courses/myOwnApi/resources/views"
+		"/C/wamp/www/courses/myOwnApi/resources/assets",
+		"/C/wamp/www/courses/myOwnApi/storage/logs",
+		"/C/wamp/www/courses/myOwnApi/vendor/fzaninotto/faker"
 	],
 	"file_history":
 	[
-		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MyController.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerController.php",
+		"/C/wamp/www/courses/myOwnApi/config/app.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Kernel.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/CreateMakerRequest.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerVehiclesController.php",
+		"/C/wamp/www/courses/myOwnApi/app/Vehicle.php",
+		"/C/wamp/www/courses/myOwnApi/database/seeds/MakerSeed.php",
+		"/C/wamp/www/courses/myOwnApi/database/seeds/VehiclesSeed.php",
+		"/C/wamp/www/courses/myOwnApi/database/seeds/DatabaseSeeder.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/routes.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/VehicleController.php",
+		"/C/wamp/www/courses/myOwnApi/composer.json",
 		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141159_vehicles_table.php",
+		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
 		"/C/wamp/www/courses/myOwnApi/.env",
 		"/C/wamp/www/courses/myOwnApi/app/MyModel.php",
-		"/C/wamp/www/courses/myOwnApi/app/Vehicle.php",
 		"/C/wamp/www/courses/myOwnApi/app/Maker.php",
-		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MyController.php",
 		"/C/wamp/www/courses/myOwnApi/resources/views/hi.blade.php",
 		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/C/wamp/www/courses/myOwnApi/app/Http/routes.php",
 		"/C/wamp/www/courses/myOwnApi/public/index.html",
 		"/C/Users/matthiku/Dropbox/courses/myOwnApi/public/index.html",
 		"/C/Users/matthiku/AppData/Roaming/Sublime Text 3/Packages/Alignment/Default (Windows).sublime-keymap",
@@ -246,6 +291,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"::",
 			"belongs",
 			"polloptions",
 			"poll_option",
@@ -265,6 +311,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"->",
 			"poll_options",
 			"polloption",
 			"poll_option",
@@ -320,13 +367,13 @@
 	"menu_visible": true,
 	"output.find_results":
 	{
-		"height": 0.0
+		"height": 118.0
 	},
 	"pinned_build_system": "",
 	"project": "MyOwnApi.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -372,7 +419,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 223.0,
+	"side_bar_width": 289.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
