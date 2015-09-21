@@ -22,11 +22,11 @@ class VehiclesSeed extends Seeder
         {
             Vehicle::create
             ([
-                'color'    => $faker::safeColorName(),
-                'power'    => $faker::randomNumber(),
-                'capacity' => $faker::randomFloat(),
-                'speed'    => $faker::randomFloat(),
-                'maker_id' => $faker::numberBetween(1,5)
+                'color'    => $faker->safeColorName(),
+                'power'    => $faker->randomNumber(),
+                'capacity' => $faker->randomFloat(),
+                'speed'    => $faker->randomFloat(),
+                'maker_id' => $faker->numberBetween(1,5)
             ]);
         }
     }

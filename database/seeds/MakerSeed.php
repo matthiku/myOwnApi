@@ -17,13 +17,15 @@ class MakerSeed extends Seeder
     public function run()
     {
         $faker = Faker::create();
+        //echo $faker->word();die();
+        //var_dump($faker);die();
 
         for($i=0; $i<6; $i++) 
         {
             Maker::create
             ([
-                'name'  => $faker::word(),
-                'phone' => $faker::randomDigit(5)
+                'name'  => $faker->word(),
+                'phone' => $faker->randomDigit(5)
             ]);
         }
     }

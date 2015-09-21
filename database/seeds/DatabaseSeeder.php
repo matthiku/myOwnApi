@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         $this->call('MakerSeed');
-        $this->call('VehiclesFeed');
+        $this->call('VehiclesSeed');
 
         Model::reguard();
     }
