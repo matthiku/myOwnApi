@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use DB;
+
 use App\Maker;
 use App\Vehicle;
 use App\Http\Requests\CreateMakerRequest;
@@ -16,7 +18,7 @@ class MakerController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth.basic', ['except' => ['index', 'show']]);
+        $this->middleware('auth.basic.once', ['except' => ['index', 'show']]);
     }
 
 
@@ -46,9 +48,17 @@ class MakerController extends Controller
         //var_dump($request);die();
         $values = $request->only(['name', 'phone']);
 
-        Maker::create($values);
+        $name = $request->get('name');
+        $search = DB::select('select * from makers where name = ?', [$name]);
+        //var_dump($search);die();
+        if ( sizeof($search) > 0 ) {
+            return response()->json(['message' => 'This maker already exists!', 'code' => 404], 404 );
+        }
 
-        return response()->json(['message' => 'Maker correctly added'], 201);
+        $result = Maker::create($values);
+        //var_dump($result);die();
+
+        return response()->json(['message' => 'Maker correctly added -', 'code' => 201], 201);
 
         //
     }
