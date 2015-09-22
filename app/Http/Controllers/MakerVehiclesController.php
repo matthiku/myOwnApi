@@ -12,8 +12,11 @@ use App\Vehicle;
 use App\Http\Requests\CreateVehicleRequest;
 
 
+
+
 class MakerVehiclesController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -30,6 +33,10 @@ class MakerVehiclesController extends Controller
 
         return response()->json(['data' => $maker->vehicles], 200);
     }
+
+
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -54,6 +61,10 @@ class MakerVehiclesController extends Controller
         return response()->json(['message' => 'The vehicle associated was created', 'code' => 201], 201);
     }
 
+
+
+
+
     /**
      * Display the specified resource.
      *
@@ -73,6 +84,9 @@ class MakerVehiclesController extends Controller
         }
         return response()->json(['data' => $vehicle], 200);
     }
+
+
+
 
 
     /**
@@ -110,14 +124,35 @@ class MakerVehiclesController extends Controller
         return response()->json(['message' => 'The vehicles has been updated'], 200);
     }
 
+
+
+
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($makerId, $vehicleId)
     {
-        //
+        // verify first if this maker exists
+        $maker = Maker::find($makerId);
+        if (!$maker) {
+            return response()->json(['message' => 'This maker does not exist', 'code' => 404], 404 );
+        }
+        // verify that the vahicle exists
+        $vehicle = $maker->vehicles->find($vehicleId);
+        if (!$vehicle) {
+            return response()->json(['message' => 'This vehicle does not exist', 'code' => 404], 404 );
+        }
+
+        $vehicle->delete();
+
+        return response()->json(['message' => 'This vehicle has been deleted', 'code' => 200], 200);
+
     }
+
+
+
+
 }

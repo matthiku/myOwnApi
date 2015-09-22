@@ -98,6 +98,20 @@ class MakerController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // verify first if this maker exists
+        $maker = Maker::find($id);
+        if (!$maker) {
+            return response()->json(['message' => 'This maker does not exist', 'code' => 404], 404 );
+        }
+        // Also check if ther are linked vehicles to this maker
+        $vehicles = $maker->vehicles;
+        //var_dump($vehicles);die();
+        if ( sizeof($vehicles) > 0 ) {
+            return response()->json(['message' => 'This maker has linked vehicles - delete vehicles first', 'code' => 409], 409 );
+        }
+
+        $maker->delete();
+
+        return response()->json(['message' => 'The maker has been deleted', 'code' => 200], 200);
     }
 }
