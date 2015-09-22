@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
 use App\Maker;
+use App\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,11 +19,13 @@ class DatabaseSeeder extends Seeder
     	// (otherwise we cannot delete records in the Makers table while vehicles still have a reference to it)
     	DB::statement('SET FOREIGN_KEY_CHECKS = 0');
     	Maker::truncate();
+        User::truncate();
 
         Model::unguard();
 
         $this->call('MakerSeed');
         $this->call('VehiclesSeed');
+        $this->call('UsersSeed');
 
         Model::reguard();
     }
