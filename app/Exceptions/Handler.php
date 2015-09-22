@@ -8,6 +8,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
+
 class Handler extends ExceptionHandler
 {
     /**
@@ -19,6 +20,8 @@ class Handler extends ExceptionHandler
         HttpException::class,
         ModelNotFoundException::class,
     ];
+
+
 
     /**
      * Report or log an exception.
@@ -33,6 +36,9 @@ class Handler extends ExceptionHandler
         return parent::report($e);
     }
 
+
+
+
     /**
      * Render an exception into an HTTP response.
      *
@@ -42,10 +48,27 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof ModelNotFoundException) {
-            $e = new NotFoundHttpException($e->getMessage(), $e);
+
+        $errorCode = $e->errorInfo[0];
+        $errorText = $e->errorInfo[2];
+        /*/ handle 403 forbidden responses
+        if ( $this->code === 403 ) {
+            return response()->json( [ 'message' => 'PHP Laravel Authentication failed!', 'code' => 403], 403 );
+        }*/
+
+        // handle incorrect URLs
+        if ( $e instanceof NotFoundHttpException ) {
+            return response()->json( [ 'message' => 'Bad request, please verify your URL!', 'code' => 400 ], 400 );
+        } else {
+            return response()->json( [ 'message' => 'Unhandled error, please try again later! Code:'.$errorCode.' Error:'.$errorText, 'code' => 500 ], 500 );
         }
 
-        return parent::render($request, $e);
     }
+
+
+
+
 }
+
+
+
