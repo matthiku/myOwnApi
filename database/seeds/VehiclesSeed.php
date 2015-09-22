@@ -23,9 +23,9 @@ class VehiclesSeed extends Seeder
             Vehicle::create
             ([
                 'color'    => $faker->safeColorName(),
-                'power'    => $faker->randomNumber(),
-                'capacity' => $faker->randomFloat(),
-                'speed'    => $faker->randomFloat(),
+                'power'    => $faker->numberBetween(25,500),
+                'capacity' => $faker->numberBetween(250,6000),
+                'speed'    => $faker->randomFloat(1,25,200),
                 'maker_id' => $faker->numberBetween(1,5)
             ]);
         }

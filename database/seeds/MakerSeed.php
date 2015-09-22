@@ -25,7 +25,7 @@ class MakerSeed extends Seeder
             Maker::create
             ([
                 'name'  => $faker->word(),
-                'phone' => $faker->randomDigit(5)
+                'phone' => $faker->numberBetween(99999,999999)
             ]);
         }
     }
