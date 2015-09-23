@@ -16,7 +16,7 @@ class MakersTable extends Migration
         {
             $table->increments('id');
             $table->string('name')->unique();
-            $table->integer('phone');
+            $table->string('phone');
             $table->timestamps();
         });
     }

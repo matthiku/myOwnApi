@@ -4,32 +4,88 @@
 		"selected_items":
 		[
 			[
-				"A",
-				"App〔namespace〕"
-			],
-			[
-				"re",
-				"$request〔variable〕"
-			],
-			[
-				"req",
-				"required"
-			],
-			[
-				"ve",
-				"$vehicle〔variable〕"
-			],
-			[
-				"mak",
-				"maker_id"
-			],
-			[
-				"fa",
-				"$faker〔variable〕"
+				"err",
+				"$errorText〔variable〕"
 			],
 			[
 				"res",
 				"response〔function〕"
+			],
+			[
+				"n",
+				"$name〔variable〕"
+			],
+			[
+				"fa",
+				"$fails〔variable〕"
+			],
+			[
+				"R",
+				"Routing〔namespace〕"
+			],
+			[
+				"C",
+				"Contracts〔namespace〕"
+			],
+			[
+				"tr",
+				"truncate"
+			],
+			[
+				"ve",
+				"$vehicleId〔variable〕"
+			],
+			[
+				"veh",
+				"vehicle"
+			],
+			[
+				"v",
+				"$vehicles〔variable〕"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"sp",
+				"speed"
+			],
+			[
+				"vehic",
+				"vehicleId"
+			],
+			[
+				"req",
+				"request〔function〕"
+			],
+			[
+				"ret",
+				"return〔keyword〕"
+			],
+			[
+				"ma",
+				"$maker〔variable〕"
+			],
+			[
+				"m",
+				"$makerId〔variable〕"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"A",
+				"App〔namespace〕"
+			],
+			[
+				"mak",
+				"maker_id"
 			],
 			[
 				"num",
@@ -116,10 +172,6 @@
 				"function"
 			],
 			[
-				"ret",
-				"return"
-			],
-			[
 				"fu",
 				"function"
 			],
@@ -182,32 +234,46 @@
 	"expanded_folders":
 	[
 		"/C/wamp/www/courses/myOwnApi",
-		"/C/wamp/www/courses/myOwnApi/resources/assets",
-		"/C/wamp/www/courses/myOwnApi/storage/logs",
-		"/C/wamp/www/courses/myOwnApi/vendor/fzaninotto/faker"
+		"/C/wamp/www/courses/myOwnApi/app",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers",
+		"/C/wamp/www/courses/myOwnApi/database/seeds"
 	],
 	"file_history":
 	[
-		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MyController.php",
-		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerController.php",
-		"/C/wamp/www/courses/myOwnApi/config/app.php",
-		"/C/wamp/www/courses/myOwnApi/app/Http/Kernel.php",
-		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/CreateMakerRequest.php",
-		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerVehiclesController.php",
-		"/C/wamp/www/courses/myOwnApi/app/Vehicle.php",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/MakerSeed.php",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/VehiclesSeed.php",
+		"/C/wamp/www/courses/myOwnApi/app/Maker.php",
+		"/C/wamp/www/courses/myOwnApi/app/Vehicle.php",
+		"/C/wamp/www/courses/myOwnApi/database/seeds/UsersSeed.php",
+		"/C/wamp/www/courses/myOwnApi/app/User.php",
+		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_22_093523_create_users.php",
+		"/C/wamp/www/courses/myOwnApi/app/Exceptions/Handler.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/symfony/http-kernel/Exception/HttpException.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Contracts/Debug/ExceptionHandler.php",
+		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerController.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/CreateMakerRequest.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/Request.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Contracts/Validation/ValidatesWhenResolved.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Middleware/OnceAuth.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Kernel.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerVehiclesController.php",
+		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Auth/Middleware/AuthenticateWithBasicAuth.php",
+		"/C/wamp/www/courses/myOwnApi/.env",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/DatabaseSeeder.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/CreateVehicleRequest.php",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MyController.php",
+		"/C/wamp/www/courses/myOwnApi/config/app.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/routes.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/VehicleController.php",
 		"/C/wamp/www/courses/myOwnApi/composer.json",
 		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141159_vehicles_table.php",
-		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
-		"/C/wamp/www/courses/myOwnApi/.env",
 		"/C/wamp/www/courses/myOwnApi/app/MyModel.php",
-		"/C/wamp/www/courses/myOwnApi/app/Maker.php",
 		"/C/wamp/www/courses/myOwnApi/resources/views/hi.blade.php",
-		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/C/wamp/www/courses/myOwnApi/public/index.html",
 		"/C/Users/matthiku/Dropbox/courses/myOwnApi/public/index.html",
 		"/C/Users/matthiku/AppData/Roaming/Sublime Text 3/Packages/Alignment/Default (Windows).sublime-keymap",
@@ -291,6 +357,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"];",
+			"function find",
 			"::",
 			"belongs",
 			"polloptions",
@@ -382,6 +450,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"notfound",
+				"vendor\\symfony\\http-kernel\\Exception\\NotFoundHttpException.php"
+			],
 			[
 				"eloquent",
 				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
