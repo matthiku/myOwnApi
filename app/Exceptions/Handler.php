@@ -63,7 +63,8 @@ class Handler extends ExceptionHandler
         if ( $e instanceof NotFoundHttpException ) {
             return response()->json( [ 'message' => 'Bad request, please verify your URL!', 'code' => 400 ], 400 );
         } else {
-            return response()->json( [ 'message' => 'Unhandled error, please try again later! Code:'.$errorCode.' Error:'.$errorText, 'code' => 500 ], 500 );
+            return response()->json( [ 'message' => 'Unhandled error, please try again later!', 'code' => 500 ], 500 );
+            //return response()->json( [ 'message' => 'Unhandled error, please try again later! Code:'.$errorCode.' Error:'.$errorText, 'code' => 500 ], 500 );
         }
 
     }

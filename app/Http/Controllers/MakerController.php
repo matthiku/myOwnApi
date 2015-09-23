@@ -48,9 +48,11 @@ class MakerController extends Controller
         //var_dump($request);die();
         $values = $request->only(['name', 'phone']);
 
+
         // prevent creation of another maker with the same name
+        $name = $request->get('name');
         $maker = Maker::where('name', $name)->first();
-        //$name = $request->get('name');
+        // alternative way....
         //$search = DB::select('select * from makers where name = ?', [$name]);
         //if ( sizeof($search) > 0 ) {
         if ( $maker ) {
