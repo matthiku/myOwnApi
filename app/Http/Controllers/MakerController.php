@@ -12,6 +12,9 @@ use App\Maker;
 use App\Vehicle;
 use App\Http\Requests\CreateMakerRequest;
 
+// to use caching of requests:
+use Illuminate\Support\Facades\Cache;
+
 class MakerController extends Controller
 {
 
@@ -30,9 +33,15 @@ class MakerController extends Controller
      */
     public function index()
     {
-        $makers = Maker::all();
+        // un-cached version:
+        //$makers = Maker::all();
+        // cached version: (cached for 15 seconds)
+        $makers = Cache::remember('makers', 15/60, 
+            function() {
+                return Maker::simplePaginate(15);
+            });
         //
-        return response()->json(['data' => $makers], 200);
+        return response()->json(['next' => $makers->nextPageUrl(), 'previous' => $makers->previousPageUrl(), 'data' => $makers->items()], 200);
     }
 
     /**

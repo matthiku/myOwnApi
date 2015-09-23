@@ -20,7 +20,7 @@ class MakerSeed extends Seeder
         //echo $faker->word();die();
         //var_dump($faker);die();
 
-        for($i=0; $i<6; $i++) 
+        for($i=0; $i<100; $i++) 
         {
             Maker::create
             ([

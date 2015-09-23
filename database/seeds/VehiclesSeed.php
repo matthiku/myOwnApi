@@ -18,7 +18,7 @@ class VehiclesSeed extends Seeder
     {
         $faker = Faker::create();
 
-        for($i=0; $i<30; $i++) 
+        for($i=0; $i<500; $i++) 
         {
             Vehicle::create
             ([
@@ -26,7 +26,7 @@ class VehiclesSeed extends Seeder
                 'power'    => $faker->numberBetween(25,500),
                 'capacity' => $faker->numberBetween(250,6000),
                 'speed'    => $faker->randomFloat(1,25,200),
-                'maker_id' => $faker->numberBetween(1,5)
+                'maker_id' => $faker->numberBetween(1,99)
             ]);
         }
     }
