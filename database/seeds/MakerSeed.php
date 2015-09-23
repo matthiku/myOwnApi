@@ -24,7 +24,7 @@ class MakerSeed extends Seeder
         {
             Maker::create
             ([
-                'name'  => $faker->word(),
+                'name'  => $faker->company(),
                 'phone' => $faker->phoneNumber()
             ]);
         }

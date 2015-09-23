@@ -191,6 +191,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 88,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -233,13 +249,11 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp/www/courses/myOwnApi",
-		"/C/wamp/www/courses/myOwnApi/app",
-		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers",
-		"/C/wamp/www/courses/myOwnApi/database/seeds"
+		"/C/wamp/www/courses/myOwnApi"
 	],
 	"file_history":
 	[
+		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/MakerSeed.php",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/VehiclesSeed.php",
 		"/C/wamp/www/courses/myOwnApi/app/Maker.php",
@@ -252,7 +266,6 @@
 		"/C/wamp/www/courses/myOwnApi/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php",
 		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
 		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Contracts/Debug/ExceptionHandler.php",
-		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MakerController.php",
 		"/C/wamp/www/courses/myOwnApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/CreateMakerRequest.php",
@@ -397,8 +410,66 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 88,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".env",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

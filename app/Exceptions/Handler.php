@@ -49,8 +49,11 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
 
-        $errorCode = $e->errorInfo[0];
-        $errorText = $e->errorInfo[2];
+        if ($e instanceof HttpException && $e->getStatusCode() === 403) {
+            return response()->json( [ 'message' => 'PHP Laravel Authentication failed!', 'code' => 403], 403 );
+        }
+        //$errorCode = $e->errorInfo[0];
+        //$errorText = $e->errorInfo[2];
         /*/ handle 403 forbidden responses
         if ( $this->code === 403 ) {
             return response()->json( [ 'message' => 'PHP Laravel Authentication failed!', 'code' => 403], 403 );
