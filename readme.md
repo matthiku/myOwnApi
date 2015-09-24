@@ -1,3 +1,3 @@
-## Laravel 5 RESTful API 
+## Laravel 5.1 RESTful API 
 
-completely functional RESTful API implemented with Laravel 5
+completely functional RESTful API implemented with Laravel 5.1

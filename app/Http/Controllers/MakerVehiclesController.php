@@ -66,9 +66,9 @@ class MakerVehiclesController extends Controller
         //
         $values = $request->all();
 
-        $maker->vehicles()->create($values);
+        $vehicle = $maker->vehicles()->create($values);
 
-        return response()->json(['message' => 'The vehicle associated was created', 'code' => 201], 201);
+        return response()->json(['message' => "The vehicle associated was created with serial number {  $vehicle->serie }", 'code' => 201], 201);
     }
 
 

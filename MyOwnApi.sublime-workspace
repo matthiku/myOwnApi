@@ -195,16 +195,24 @@
 			"file": "readme.md",
 			"settings":
 			{
-				"buffer_size": 88,
+				"buffer_size": 92,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".env",
+			"file": "app/Http/Controllers/MakerController.php",
 			"settings":
 			{
-				"buffer_size": 313,
-				"line_ending": "Unix"
+				"buffer_size": 4154,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/MakerVehiclesController.php",
+			"settings":
+			{
+				"buffer_size": 4189,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -249,10 +257,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp/www/courses/myOwnApi"
+		"/C/wamp/www/courses/myOwnApi",
+		"/C/wamp/www/courses/myOwnApi/app",
+		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers",
+		"/C/wamp/www/courses/myOwnApi/config",
+		"/C/wamp/www/courses/myOwnApi/storage/logs"
 	],
 	"file_history":
 	[
+		"/C/wamp/www/courses/myOwnApi/config/app.php",
+		"/C/wamp/www/courses/myOwnApi/storage/logs/laravel.log",
 		"/C/wamp/www/courses/myOwnApi/database/migrations/2015_09_18_141047_makers_table.php",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/MakerSeed.php",
 		"/C/wamp/www/courses/myOwnApi/database/seeds/VehiclesSeed.php",
@@ -280,7 +294,6 @@
 		"/C/wamp/www/courses/myOwnApi/database/seeds/DatabaseSeeder.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/Requests/CreateVehicleRequest.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/MyController.php",
-		"/C/wamp/www/courses/myOwnApi/config/app.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/routes.php",
 		"/C/wamp/www/courses/myOwnApi/app/Http/Controllers/VehicleController.php",
 		"/C/wamp/www/courses/myOwnApi/composer.json",
@@ -410,7 +423,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -419,15 +432,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 88,
+						"buffer_size": 92,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								87,
-								87
+								91,
+								91
 							]
 						],
 						"settings":
@@ -439,32 +452,64 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": ".env",
-					"semi_transient": true,
+					"file": "app/Http/Controllers/MakerController.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 313,
+						"buffer_size": 4154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								69
+								2018,
+								2018
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Http/Controllers/MakerVehiclesController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1426,
+								1426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

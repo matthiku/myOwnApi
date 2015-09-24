@@ -71,7 +71,7 @@ class MakerController extends Controller
         $result = Maker::create($values);
         //var_dump($result);die();
 
-        return response()->json(['message' => 'Maker correctly added -', 'code' => 201], 201);
+        return response()->json(['message' => "Maker correctly added with id { $maker->id }", 'code' => 201], 201);
 
         //
     }
