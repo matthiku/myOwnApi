@@ -21,7 +21,7 @@ class MakerController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth.basic.once', ['except' => ['index', 'show']]);
+        $this->middleware('oauth', ['except' => ['index', 'show']]);
     }
 
 
@@ -71,7 +71,7 @@ class MakerController extends Controller
         $result = Maker::create($values);
         //var_dump($result);die();
 
-        return response()->json(['message' => "Maker correctly added with id { $maker->id }", 'code' => 201], 201);
+        return response()->json(['message' => "Maker correctly added", 'id' =>  $result->id, 'code' => 201], 201);
 
         //
     }

@@ -12,6 +12,8 @@
 */
 
 
+// put all routes in a group to define the API version
+// url therefore is for instance '/api/v0.1/makers'
 Route::group(array('prefix' => 'api/v0.1'), function() {
 
 	Route::resource('makers', 'MakerController', ['except' => ['create','edit']]);
@@ -20,5 +22,11 @@ Route::group(array('prefix' => 'api/v0.1'), function() {
 
 	Route::resource('makers.vehicles', 'MakerVehiclesController', ['except' => ['edit', 'create']]);
 
+});
+
+
+// For oauth authentication, to get the access token
+Route::post('oauth/access_token', function() {
+    return Response::json(Authorizer::issueAccessToken());
 });
 

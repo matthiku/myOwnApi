@@ -21,7 +21,7 @@ class MakerVehiclesController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth.basic.once', ['except' => ['index', 'show']]);
+        $this->middleware('oauth', ['except' => ['index', 'show']]);
     }
 
 
@@ -68,7 +68,7 @@ class MakerVehiclesController extends Controller
 
         $vehicle = $maker->vehicles()->create($values);
 
-        return response()->json(['message' => "The vehicle associated was created with serial number {  $vehicle->serie }", 'code' => 201], 201);
+        return response()->json(['message' => "The vehicle linked to maker $vehicle->maker_id was created.", 'id' => $vehicle->serie, 'code' => 201], 201);
     }
 
 
