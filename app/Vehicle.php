@@ -14,10 +14,12 @@ class Vehicle extends Model
 
 	protected $primaryKey = 'serie';
 
-	protected $fillable = ['color', 'power', 'capacity', 'speed', 'maker_id'];
+	protected $fillable = ['color', 'power', 'capacity', 'speed', 'maker_id', 'type_id'];
 
-	//these fields should not be visible to users
+	//these fields should not be visible to clientscreat_types
 	protected $hidden = [ 'created_at', 'updated_at', 'maker_id'];
+
+	
 
 	public function maker() {
 		return $this->belongsTo('App\Maker');

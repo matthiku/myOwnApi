@@ -10,8 +10,9 @@ use App\Vehicle;
 
 class VehicleController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
+     * Display a full listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -21,4 +22,8 @@ class VehicleController extends Controller
         // return all vehciles
         return response()->json(['data' => $vehicles], 200);
     }
+
+
+
+
 }

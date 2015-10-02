@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         $this->call('MakerSeed');
+        $this->call('TypesSeed');
         $this->call('VehiclesSeed');
         $this->call('UsersSeed');
 

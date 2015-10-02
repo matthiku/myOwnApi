@@ -3,11 +3,12 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Maker;
+use App\Type;
 
 use Faker\Factory as Faker;
 
-class MakerSeed extends Seeder
+
+class TypesSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,15 +18,12 @@ class MakerSeed extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        //echo $faker->word();die();
-        //var_dump($faker);die();
 
-        for($i=0; $i<100; $i++) 
+        for($i=0; $i<10; $i++) 
         {
-            Maker::create
+            Type::create
             ([
-                'name'  => $faker->unique()->company(),
-                'phone' => $faker->phoneNumber()
+                'name'    => $faker->name(),
             ]);
         }
     }

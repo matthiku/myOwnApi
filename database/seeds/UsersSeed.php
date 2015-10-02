@@ -20,7 +20,7 @@ class UsersSeed extends Seeder
         ([
             'name' => 'Max Maier',
             'email' => 'fake@fake.com',
-            'password' => Hash::make('pass')
+            'password' => Hash::make('test01')
         ]);
     }
 }
