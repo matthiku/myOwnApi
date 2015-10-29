@@ -25,4 +25,12 @@ class Vehicle extends Model
 		return $this->belongsTo('App\Maker');
 	}
 	
+
+	public function type() {
+		return $this->belongsTo('App\Type');
+	}
+	
+
+
+
 }

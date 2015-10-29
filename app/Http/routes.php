@@ -22,6 +22,9 @@ Route::group(array('prefix' => 'api/v0.1'), function() {
 
 	Route::resource('makers.vehicles', 'MakerVehiclesController', ['except' => ['edit', 'create']]);
 
+	Route::get('vehicles/full', 'VehicleController@vehiclesFull');
+	Route::get('vehicles/full/{id}', 'VehicleController@vehiclesFull');
+
 });
 
 

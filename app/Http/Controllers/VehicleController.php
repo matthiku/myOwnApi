@@ -24,6 +24,17 @@ class VehicleController extends Controller
     }
 
 
+    public function vehiclesFull($id = null)
+    { 
+        if ($id === null) {
+            $vehicles = Vehicle::with('type','maker')->get();
+        } else {
+            $vehicles = Vehicle::with('type','maker');dd($vehicles);
+              //  ->where('serie', $id)
+                //->get();
+        }
 
+        return response()->json(['data' => $vehicles], 200);
+    }
 
 }

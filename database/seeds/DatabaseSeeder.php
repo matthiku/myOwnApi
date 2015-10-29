@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use App\Maker;
 use App\User;
+use App\Type;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,6 +21,7 @@ class DatabaseSeeder extends Seeder
     	DB::statement('SET FOREIGN_KEY_CHECKS = 0');
     	Maker::truncate();
         User::truncate();
+        Type::truncate();
 
         Model::unguard();
 
