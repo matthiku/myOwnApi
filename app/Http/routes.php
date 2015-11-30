@@ -16,6 +16,8 @@
 // url therefore is for instance '/api/v0.1/makers'
 Route::group(array('prefix' => 'api/v0.1'), function() {
 
+    Route::resource('files', 'FileController', ['except' => ['create','edit']]);
+
 	Route::resource('makers', 'MakerController', ['except' => ['create','edit']]);
 
 	Route::resource('vehicles', 'VehicleController', ['only' => ['index']]);
@@ -25,11 +27,10 @@ Route::group(array('prefix' => 'api/v0.1'), function() {
 	Route::get('vehicles/full', 'VehicleController@vehiclesFull');
 	Route::get('vehicles/full/{id}', 'VehicleController@vehiclesFull');
 
-});
 
+    Route::post('oauth/access_token', function() {
+        return response()->json(Authorizer::issueAccessToken());
+    });
 
-// For oauth authentication, to get the access token
-Route::post('oauth/access_token', function() {
-    return Response::json(Authorizer::issueAccessToken());
 });
 

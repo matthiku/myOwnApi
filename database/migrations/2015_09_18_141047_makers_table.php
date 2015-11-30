@@ -28,6 +28,9 @@ class MakersTable extends Migration
      */
     public function down()
     {
+        // Truncated (delete) the data, but ignore primary and foreign key definitions
+        // (otherwise we cannot delete records in the Makers table while vehicles still have a reference to it)
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::drop('makers');
     }
 }

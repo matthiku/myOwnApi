@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
     	Maker::truncate();
         User::truncate();
         Type::truncate();
+        DB::table('oauth_clients')->truncate();
 
         Model::unguard();
 
@@ -29,6 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call('TypesSeed');
         $this->call('VehiclesSeed');
         $this->call('UsersSeed');
+        $this->call('OauthClientSeed');
 
         Model::reguard();
     }
